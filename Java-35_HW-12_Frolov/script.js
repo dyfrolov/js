@@ -1,0 +1,11 @@
+let divtask = document.querySelector('#listtodo');
+let buttons = document.querySelectorAll('button');
+console.log(buttons);
+console.log(document.querySelector("#wrapitem"));
+console.log(document.querySelector("#form"));
+console.log("AAA"+divtask);
+let btn = document.createElement('button');
+console.log(btn);
+btn.innerHTML = "BUTTON";
+let listtodo = document.querySelector("#listtodo");
+listtodo.append(btn);

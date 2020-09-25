@@ -1,0 +1,99 @@
+.container{
+    width: 600px;
+    margin: 150px auto;
+}
+
+h2.box{
+    padding:15px;
+    border:1px solid black;
+    width: 200px;
+    /* transition-property: background-color; */
+    /* transition-duration: 2s; */
+    /* transition-timing-function: linear; */
+    /* transition-delay: ; */
+    transition: background-color 0.5s linear, 
+    transform 1s cubic-bezier(.28,1.32,.63,1.36),
+    visibility 3s linear 1s;
+    
+}
+
+h2.box:hover{
+    background-color:rgb(252, 0, 0);
+    transform: scale(1.5);
+    visibility: hidden;
+    /* transition: background-color 2s linear 2s; */
+}
+
+.item{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    top:100px;
+    left:100px;
+    color:white;
+    font-size: 1rem;
+    animation-name: moving;
+    animation-duration: 2s;
+    /* animation-delay: 0.2s; */
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    /* animation-play-state: paused; */
+    /* animation-direction: reverse; */
+    /* animation-iteration-count: infinite; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation: flash 2s linear infinite; */
+    /* animation: tada 2s infinite; */
+}
+
+.item:hover{
+    /* animation-play-state: running; */
+    animation: shakeX; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+}
+
+.flash{
+    animation: flash 2s linear infinite;
+}
+
+@keyframes flash{
+    from, 50%, to{
+        opacity: 1;
+    }
+    25%,75%{
+        opacity: 0;
+    }
+    /* 50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    } */
+}
+
+@keyframes moving{
+    0%{
+        left:100px;
+    }
+    25%{
+        left: 400px;
+        top: 400px;
+    }
+    50%{
+        top:300px;
+        left:600px;
+        
+    }
+    75%{
+        left:700px;
+    }
+    100%{
+        top:100px;
+        left:800px;
+        transform: rotate(180deg) scale(5);
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" defer></script>
+    <title>Document</title>
+    <style>
+        body{
+            font-size:3rem;
+        }
+        .wrapper{
+            width: 900px;
+            margin: 0 auto;
+        }
+        .box, .item{
+            border:1px solid black;
+            height: 100px;
+            width: 100px;
+        }
+        .row{
+            display: flex;
+        }
+        .row .box{
+            margin:15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <button id="addBtn">Add</button>
+        <ul id="list">
+
+        </ul>
+
+        <div class="box"></div>
+
+        <div class="row">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+
+        <input id="myInp" type="text">
+
+        <form name="subscribe" action="#" id="myform">
+            <input name="email" type="text">
+            <input type="submit">
+        </form>
+        <hr>
+        <div class="item"></div>
+
+        <a id="myLink" href="#" target="_blank" myIndex="123" data-long-text="hello"></a>
+    </div>
+</body>
+</html>
