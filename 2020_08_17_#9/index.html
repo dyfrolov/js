@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: gray;
+           height: 100vh;
+            display:flex;
+            position: relative;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .static-box{
+            padding:10% 15%;
+            border:1px solid blue;
+            text-align:center;
+            border: 1px solid white ;
+        }
+        h1{
+            /* text-decoration:underline; */
+            /* font-style: italic; */
+            text-transform: uppercase;
+            animation: h1-anim 1s alternate infinite ;
+            /* color: red; */
+        }
+        @keyframes h1-anim {
+            0%{
+                color: red;
+            }
+            100%{
+                color: orangered;
+            }
+            
+        }
+
+        button[type="reset"]{
+            color:red;
+            border-color: hotpink;
+            transition: color 500ms linear , border 500ms linear;
+
+        }
+        button[type="reset"]:hover{
+            color:green;
+            border:3px solid green;
+
+        }
+        .flying-box{
+            /* flex-basis: 100%; */
+            position: absolute;
+            /* border:3px dashed gray; */
+            /* overflow:visible; */
+            /* width: 10px;
+            height: 10px; */
+            /* font-size: 1%; */
+            animation: fly 1s linear;
+                font-size: 600%;
+                color:rgba(44, 11, 226, 0.733);
+                top:60%;
+                left:50%;
+                text-align: center;
+                font-weight: bold;
+                font-family: sans-serif;
+            /* background: yellow url("./american.png") no-repeat center; */
+            /* background-position:center; */
+            /* background-size: cover; */
+        }
+
+        /* .flying{
+            animation: fly 2s linear ;
+            animation-fill-mode: forward ;
+            
+        } */
+        @keyframes fly {
+            0%{
+                /* width: 10px;
+                height: 10px; */
+                font-size: 1%;
+                top:-50%;            
+                left:0%;
+            }
+            50%{
+                /* width: 100px;
+                height: 100px; */
+                font-size: 300%;
+                top:0%;
+                left:25%;
+            }
+            100%{
+                /* width: 500px;
+                height: 500px; */
+                font-size: 600%;
+                top:60%;
+                left:50%;
+                transform: rotate(720deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="static-box">
+            <h1>Burger</h1>
+            <p><img src="./american.png" alt=""></p>
+        </div>
+        <div class="flying-box">American</div>
+    </div>
+</body>
+</html>

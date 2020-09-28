@@ -1,0 +1,37 @@
+URL - подмножество URI
+URL - absolute path
+URI - absolute path OR relative path
+
+a href URI
+<a href="./pages/page1.html"></a>
+<a href="../index.html"></a>
+<a href="../../index.html"></a>
+
+<a name=""></a>
+
+absolute links - to external resources  (target = "_blank")
+relative links - to internal resourses
+
+
+p*20>lorem - 20 paragraphs 
+
+ALT+SHIFT+F - formatting text in IDE
+
+<img src="...." width OR heigth NOT BOTH!! >
+
+document stream.
+
+
+cloudinary.com - для хранения статических ресурсов
+
+
+<textarea placeholder="Enter text"></input> - будет видно placeholder
+<textarea placeholder="Enter text"> </input> - НЕ будет видно placeholder
+<textarea placeholder="Enter text">
+</input> 				- НЕ будет видно placeholder
+
+
+adobe XD
+
+<form action="#" method="GET">....</form>	# - обработчик формы на своей странице (js)
+<form action="http://dnwkdn.xs/wwa" method="GET">....</form> внешний обработчик

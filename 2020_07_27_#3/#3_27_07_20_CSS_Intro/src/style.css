@@ -1,0 +1,36 @@
+/* * {
+    color: red;
+} */
+
+/* p{
+    color: green;
+}
+
+.myClass{
+    color:blue;
+}
+
+#myID{
+    color: magenta;
+}
+
+p#title span{
+    color: red;
+}
+
+ul{
+    color: red;
+}
+
+a{
+    color: inherit;
+} */
+
+h2{
+    font-size: 80px;
+    color: brown;
+}
+
+h2{
+    color:green;
+}

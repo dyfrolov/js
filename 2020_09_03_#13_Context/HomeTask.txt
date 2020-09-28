@@ -1,0 +1,13 @@
+Implements timer:
+input and 2 buttons, start and stop
+
+First, the "Stop" button is locked, the user enters 
+a number in the input field and clicks on the "Start" button. 
+The "Start" button is blocked, and the "Stop" button is unlocked, 
+the input field disappears from the screen and a appears element that 
+showing reverse report which decreases by one every second. 
+The timer "ticks" until the counter ends or until the user 
+presses the "Stop" button. At the end of the timer, the input field 
+appears with the counter value, the "Start" button is unlocked and 
+the "Stop" button is blocked, the element that displayed the counter 
+change is disappears.

@@ -1,0 +1,73 @@
+body::before{
+    content: "BODY BEFORE";
+    color:greenyellow;
+
+}
+
+.test{
+    float: left;
+    border:1px solid red;
+}
+.test::after{
+    content: "CONTENT AFTER";
+}
+
+.wrapper{
+    max-width: 1000px;
+    margin: 100px auto;
+    border: 2px solid red;
+}
+.wrapper::before{
+    content:"wrapper:before";
+
+}
+p:first-of-type{
+    font-weight: bolder;
+}
+p:first-child{
+    font-weight: bolder;
+}
+
+.test1.test::before{
+    content: "test1 before ";
+    color:purple;
+}
+
+.wrapper::after{
+    clear:both;
+    display: block;
+    height: 40px;
+    width: 50px;
+    background-color: teal;
+    border: 1px solid green;
+    content: "WRAPPER::AFTER";
+}
+
+@media (max-width:1000px){
+    .wrapper{
+        max-width: 800px;
+        padding: 15px;
+        border: 2px solid green;
+    }
+}
+
+@media (max-width:800px){
+    .wrapper{
+        max-width: 600px;
+        padding: 15px;
+        border: 2px solid blue;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    h2{
+        color: red;
+    }
+}
+
+@media (max-width:300px){
+    .wrapper{
+        border-style: dashed;
+    }
+}

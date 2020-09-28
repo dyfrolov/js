@@ -1,0 +1,106 @@
+// alert("Hello");
+// console.log("Hello World");
+
+// let str="abba";
+// console.log( str.endsWith("bb",3) );
+// console.log( str.includes("a") );
+// console.log( str.indexOf("a",1) );
+// console.log( str.lastIndexOf("a") );
+// console.log( str.localeCompare("abbb") );
+// console.log( str.localeCompare("abba") );
+// console.log( str.match(/A.*(bA)+/i) );
+console.log("============= palindrome ================");
+
+function palindrome(str){
+    if ( str==null) return false;
+
+    if( typeof str !="string" ){
+        // console.log(str);
+        str = str.toString();
+        // console.log(str);
+    }
+    for(let i = 0; i < str.length / 2 ; i++ ){
+        if ( str.charAt(i) !== str.charAt(str.length-1-i) )
+            return false;
+    }
+    return true;
+}
+
+console.log( palindrome( "abcba" ) );
+console.log( palindrome( "abba" ) );
+console.log( palindrome( "abBa" ) );
+console.log( palindrome( 3430 ) );
+console.log( palindrome( 3430343 ) );
+console.log( palindrome( {"car":"car"} ) );
+console.log( palindrome( [111,11011,111] ) );
+console.log( palindrome( [111,11012,111] ) );
+console.log( palindrome( null ) );
+
+console.log("============= bubble sorting ================");
+// let arr = [2,1,3,1,37,4,6,7,99,4];
+let arr = [9,8,7,6,5,4,3,2,1,0];
+// let arr = [9,0,1,2,3,4,5,6,7,8];
+console.log(arr);
+bubbleSort(arr);
+console.log(arr);
+
+arr = [55];
+console.log(arr);
+bubbleSort(arr);
+console.log(arr);
+
+
+arr = [];
+console.log(arr);
+bubbleSort(arr);
+console.log(arr);
+
+arr = [2,1,3,1,37,-55,4,6,-13,7,99,4];
+console.log(arr);
+bubbleSort(arr);
+console.log(arr);
+
+function bubbleSort(arr){
+    let swapBuffer;
+    let isArrChanged;
+    let sortedAreaStart = arr.length;
+    do{
+        isArrChanged = false;
+        for( let i = 1; i < sortedAreaStart; i++ )
+        {
+            if( arr[i] < arr[i-1] ){
+                isArrChanged = true;
+                swapBuffer = arr[i];
+                arr[i] = arr[i-1];
+                arr[i-1] = swapBuffer;
+            }
+        }
+        // console.log(sortedAreaStart);
+        sortedAreaStart--;
+    }while(isArrChanged)
+}
+
+console.log("============= binary searching ================")
+let valueToFind = 7;
+console.log(valueToFind, binarySearch(arr, valueToFind));
+
+
+function binarySearch(arr,value){
+    let searchRangeMin = 0;
+    let searchRangeMax = arr.length-1;
+    let searchRangeMiddle ;
+    while( searchRangeMin <= searchRangeMax){
+        searchRangeMiddle = Math.floor((searchRangeMin + searchRangeMax) / 2 )
+        // console.log( searchRangeMin, searchRangeMax, searchRangeMiddle );
+        if( arr[searchRangeMiddle] === value ) 
+            return searchRangeMiddle;
+        if( arr[searchRangeMiddle] < value ) 
+            searchRangeMin = searchRangeMiddle + 1;
+        else 
+            searchRangeMax = searchRangeMiddle - 1;
+        // console.log("  ", searchRangeMin, searchRangeMax, searchRangeMiddle );
+    }
+    return -1;
+}
+
+

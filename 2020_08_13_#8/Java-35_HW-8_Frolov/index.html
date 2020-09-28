@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>HW 8</title>
+    <style>
+        .head-sect{
+            background:linear-gradient(0deg, rgba(4,4,4,1) 0%, rgba(255,255,255,0) 25%,  rgba(255,255,255,0) 100%),
+            rgb(66, 47, 39) url("./assets/bg_main.png") no-repeat center center;
+            background-size: cover, cover;
+        }
+        .logo-sm{
+            background: url(./assets/logo.png) no-repeat center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER  -->
+
+    <div class="head-sect">
+        <div class="container text-white text-uppercase vh-100 pt-3">
+            <div class="row">
+                <div class="col-1 d-none d-md-block logo-sm"></div>
+                <ul class="nav justify-content-end col-12 col-md-11">
+                    <li class="nav-item d-none d-md-block "><a class="nav-link text-white" href="#">log in</a></li>
+                    <li class="nav-item d-none d-md-block "><a class="nav-link text-white" href="#">sign up</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><img src="./assets/btn_burger.png" alt="menu"></a></li>
+                </ul>
+            </div>
+            <div class="row justify-content-center h-75 align-items-center">
+                <div class="col-12 align-items-center text-center">
+                    <img class="d-md-none w-25" src="./assets/logo_big.png" alt="">    
+                    <p class="text-white-50 h2 font-italic text-capitalize" style="font-family:serif;">Find your Favorite</p>
+                    <h1>recipes</h1>
+                    <button class="btn text-white border text-uppercase py-3 px-5">get started</button>
+                    <p class="small mt-3">or send us your own recipes and <a href="#" class="text-white">get rewarded!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARDS -->
+
+    <div class="container">
+        <div class="row py-3 justify-content-between">
+            <div class="card border border-0 col-12 col-md" >
+                <img class="offset-5 card-img-top w-25 w-md-50 border border-dark rounded-circle p-2" src="./assets/top1.png" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title text-center text-uppercase">get inspired</h4>
+                  <p class="card-text">Some example text. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias soluta molestiae iusto voluptate, sit ex nemo et corrupti deleniti ducimus!</p>
+                </div>
+              </div>
+            <div class="card border border-0 col-12 col-md" >
+                <img class="offset-5 card-img-top w-25 w-md-50 border border-dark rounded-circle py-4 px-1 py-md-3 py-lg-4" src="./assets/top3.png" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title text-center text-uppercase">get rewarded</h4>
+                  <p class="card-text">Some example text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, vel? Ullam veritatis praesentium quaerat dolores nostrum ab eveniet iste!</p>
+                </div>
+              </div>
+            <div class="card border border-0 col-12 col-md" >
+                <img class="offset-5 card-img-top w-25 w-md-50 border border-dark rounded-circle p-2" src="./assets/top2.png" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title text-center text-uppercase">get social</h4>
+                  <p class="card-text">Some example text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, iste culpa assumenda consequatur hic nam dolore mollitia. Cupiditate, pariatur nobis.</p>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <!-- RECIPES -->
+ 
+    <div class="card-group">
+        <div class="card m-0">
+            <img class="card-img-top" src="./assets/italian.png" alt="Card image">
+            <div class="card-img-overlay text-center">
+            <p class="card-text text-white  mt-5 mt-lg-1">327 Recipes</p>
+            <h2 class="card-title text-white text-uppercase">Italian</h2>
+            </div>
+        </div>
+        <div class="card m-0">
+            <img class="card-img-top" src="./assets/indian.png" alt="Card image">
+            <div class="card-img-overlay text-center">
+            <p class="card-text text-white  mt-5 mt-lg-1">327 Recipes</p>
+            <h2 class="card-title text-white text-uppercase">indian</h2>
+            </div>
+        </div>
+        <div class="w-100 d-lg-none"></div>
+        <div class="card m-0">
+            <img class="card-img-top" src="./assets/french.png" alt="Card image">
+            <div class="card-img-overlay text-center">
+            <p class="card-text text-white  mt-5 mt-lg-1">327 Recipes</p>
+            <h2 class="card-title text-white text-uppercase">french</h2>
+            </div>
+        </div>
+        <div class="card m-0">
+            <img class="card-img-top" src="./assets/steak_house.png" alt="Card image">
+            <div class="card-img-overlay text-center">
+            <p class="card-text text-white  mt-5 mt-lg-1">327 Recipes</p>
+            <h2 class="card-title text-white text-uppercase">steackhouse</h2>
+            </div>
+        </div>
+        <div class="w-100 d-lg-none"></div>
+        <div class="card m-0">
+            <img class="card-img-top" src="./assets/sea_food.png" alt="Card image">
+            <div class="card-img-overlay text-center">
+            <p class="card-text text-white  mt-5 mt-lg-1">327 Recipes</p>
+            <h2 class="card-title text-white text-uppercase">seefood</h2>
+            </div>
+        </div>
+        <div class="d-none d-lg-block w-100"></div>
+        <div class="card m-0">
+            <img class="card-img-top" src="./assets/sushi.png" alt="Card image">
+            <div class="card-img-overlay text-center">
+            <p class="card-text text-white  mt-5 mt-lg-1">327 Recipes</p>
+            <h2 class="card-title text-white text-uppercase">sushi</h2>
+            </div>
+        </div>
+        <div class="w-100 d-lg-none"></div>
+        <div class="card m-0">
+            <img class="card-img-top" src="./assets/mexican.png" alt="Card image">
+            <div class="card-img-overlay text-center">
+            <p class="card-text text-white  mt-5 mt-lg-1">327 Recipes</p>
+            <h2 class="card-title text-white text-uppercase">mexican</h2>
+            </div>
+        </div>
+        <div class="card m-0">
+            <img class="card-img-top" src="./assets/chinese.png" alt="Card image">
+            <div class="card-img-overlay text-center">
+            <p class="card-text text-white  mt-5 mt-lg-1">327 Recipes</p>
+            <h2 class="card-title text-white text-uppercase">chinese</h2>
+            </div>
+        </div>
+        <div class="w-100 d-lg-none"></div>
+        <div class="card m-0">
+            <img class="card-img-top" src="./assets/pizza.png" alt="Card image">
+            <div class="card-img-overlay text-center">
+            <p class="card-text text-white  mt-5 mt-lg-1">327 Recipes</p>
+            <h2 class="card-title text-white text-uppercase">pizza</h2>
+            </div>
+        </div>
+        <div class="card m-0">
+            <img class="card-img-top" src="./assets/american.png" alt="Card image">
+            <div class="card-img-overlay text-center">
+            <p class="card-text text-white  mt-5 mt-lg-1">327 Recipes</p>
+            <h2 class="card-title text-white text-uppercase">american</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

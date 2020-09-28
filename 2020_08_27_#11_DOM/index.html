@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Class Work 11</title>
+    <style>
+        .main{
+            width: 50vw  ;
+            height: 100vh  ;
+            margin:0 auto;
+            padding: 20px;
+            border:1px solid orange;
+            text-align: center;
+        }
+        button{
+            margin:0 50px;
+        }
+        figure #img-slide{
+            height: 100px;
+        }
+        .imagebg{
+            background: white url("./redpanda-profile-400x400-984.jpg") no-repeat center;
+            height: 200px;
+            /* width:150px; */
+            background-size: contain;
+            border:1px solid red;
+            margin:15px auto;
+        }
+    </style>
+        <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <figure>
+            <figcaption>
+                <h1>SlideShow</h1>
+            </figcaption>
+            <img src="" alt="" id="img-slide">
+        </figure>
+        <button id="btn-prev">Prev</button>
+        <button id="btn-next">Next</button>
+        <div class="imagebg"></div>
+    </div>
+</body>
+</html>

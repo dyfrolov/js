@@ -1,0 +1,30 @@
+* {
+    color:blue;
+}
+
+h1 {
+    color:red;
+}
+
+.myClass{
+    color:green;
+}
+
+#myId{
+    color:magenta;
+}
+
+p#title span{
+    color:brown;
+
+}
+ul {
+    color:pink;
+}
+
+li,a {
+    color:inherit;
+}
+h2{
+    font-size: 80px;
+}

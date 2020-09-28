@@ -1,0 +1,73 @@
+.box{
+    border: 1px solid red;
+    width: 50%;
+}
+
+.div{
+    font-size: 0.8rem;
+}
+
+.my-port{
+    width: 1vw;
+    height: 30vh;
+    background-color: green;
+}
+
+.box-1{
+    border: 1px solid red;
+    display: block;
+}
+
+.box-1 b{
+    display: block;
+}
+
+.box-2{
+    width: 200px;
+    border: 5px solid black;
+    padding: 5px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.box-3{
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 800px;
+}
+
+.box-3 img{
+    width: 100px;
+    float:right;
+}
+
+.clearfix{
+    clear: both;
+}
+
+ul.nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.nav li{
+    float: left;
+    margin-right: 15px;
+}
+
+.products{
+    width: 900px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.item{
+    box-sizing: border-box;
+    border: 1px solid red;
+    padding: 15px;
+    float: left;
+    width: calc(100% / 3 - 30px);
+    margin: 0 15px;
+}

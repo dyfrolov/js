@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="contact.txt" defer></script>
+    <script src="store.txt" defer></script>
+    <script src="app.txt" defer></script>
+    <title>HW-16</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h2>Contact list</h2>
+        </div>
+        <div class="row">
+            <div class="col-6 align-self-start">
+                <form action="#" id="add-contact-form">
+                    <input name="name" type="text" class="form-control mb-3" placeholder="Type name">
+                    <input name="lastname" type="text" class="form-control mb-3" placeholder="Type lastname">
+                    <input name="phone" type="text" class="form-control mb-3" placeholder="Type phone">
+                    <input name="email" type="text" class="form-control mb-3" placeholder="Type email">
+                    <button class="btn btn-success">add</button>
+                    <div class="progbar-small">
+                        <div class="lds-single-ring"></div>
+                    </div>
+                </form>
+            </div>
+            <ul id="contact-list" class="col-6 list-group">
+                
+            </ul>
+        </div>
+    </div>
+    <div class="progbar-center">
+        <div class="lds-dual-ring"></div>
+    </div>
+</body>
+</html>

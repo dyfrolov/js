@@ -1,0 +1,358 @@
+body, div,p h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Lato', sans-serif;
+}
+.u-line{
+    padding-bottom: 3px;
+    border-bottom: 1px solid  #c42043;
+}
+.wrapper{
+    height: 100%;
+    display:flex;
+    width:70%;
+    min-width: 800px;
+    margin: 0 auto;
+    align-items: center;
+}
+@media (max-width:600px){
+    body>div, div.wrapper{
+        min-width: 400px;
+    }
+}
+/********************/
+/*                  */
+/*   START SECTION1 */
+/*      HEADER      */
+/********************/
+.section1{
+    color: white;
+    background:linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(255,255,255,0) 10%),
+        rgb(66, 47, 39) url("./assets/bg_main.png") no-repeat center center;
+    background-size: cover, cover;
+    height: 100vh;
+}
+
+@media (max-width:600px){
+    .hide600{
+        visibility:hidden;
+    }
+    .show600{
+        background: url("./assets/logo_big.png") no-repeat;
+        background-size: contain;
+        height: 170px;
+        width:170px;
+        display:block;
+    }
+    .section1 .slogan2, .slogan3{
+        font-size: 0.75rem;
+    } 
+    .section1 .slogan-wrap{
+        justify-content: flex-start;
+    }
+
+    .show600:hover{
+        border: 1px solid white;
+    }
+}
+
+.section1 .wrapper{
+    flex-direction: column;
+}
+.nav{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+.nav-item{
+    margin:0 15px;
+}
+.nav #div-logo{
+    margin-right: auto;
+}
+.nav img#logo{
+    width: 60px;
+}
+.nav a{
+    color:inherit;
+    text-decoration: none;
+}
+.slogan-wrap{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.slogan-wrap *{
+    margin: 0;
+}
+.slogan-wrap h1{
+    font-size: 5rem;
+    margin-bottom: 10px;
+}
+p.slogan1{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    opacity: 0.8;
+}
+.slogan-wrap button{
+    background-color: transparent;
+    padding:20px 60px;
+    color: inherit;
+    text-transform: uppercase;
+    border:2px solid white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+p.slogan2{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+.slogan3{
+    font-size: 0.9rem;
+    color:inherit;
+}
+/********************/
+/*    END  SECTION1 */
+/*    HEADER        */
+/********************/
+
+/********************/
+/*                  */
+/*   START SECTION2 */
+/*      GET-CARDS   */
+/********************/
+.section2 .wrapper{
+    align-items: flex-start;
+}
+.section2 .card{
+    margin:40px 20px;
+    text-align: center;
+}
+.card img{
+    padding:10px; 
+    border: 1px solid black;
+    border-radius: 100%; 
+}
+.oval img{
+    padding:25px 10px;
+}
+.card h3{
+    text-transform: uppercase;
+}
+@media (max-width:600px){
+    .section2 div.wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section2 .card{
+        width:300px;
+    }
+}
+
+/********************/
+/*    END  SECTION2 */
+/*    GET CARDS     */
+/********************/
+
+
+
+/********************/
+/*                  */
+/*   START SECTION3 */
+/*     FUDI APP     */
+/********************/
+@media (max-width:600px){
+    .section3 img#iphone, img#bg-phone{
+        visibility: hidden;
+    }
+    .section3 .intro-wrap{
+        text-align: center;
+    }
+    .section3 .intro-wrap p{
+        text-align: left;
+    }
+    .section3 span#hidden-u-line{
+        border-bottom: 1px solid  #c42043;
+    }
+    .section3 .u-line{
+        border-bottom: none;
+    }
+}
+.section3{
+    background-color: rgb(240, 240, 240);
+    height: 510px;
+}
+.section3 .wrapper{
+    position: relative;
+    overflow-Y: hidden; 
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding:50px 0; 
+}
+.intro-wrap{
+    flex-basis: 400px;
+}
+.intro-wrap h3{
+    text-transform: uppercase;
+}
+
+#hidden-u-line{
+    border-bottom: none;
+}
+
+.intro-wrap p{
+    font-weight: 300;
+}
+.intro-wrap button{
+    padding: 0;
+    border: none;
+    height: 40px;
+}
+img#iphone{
+    position: absolute;
+    top:70px;
+    left:42px;
+    z-index: 1;
+    width: 320px;
+}
+img#bg-phone{
+    position: absolute;
+    top:163px;
+    left:84px;
+    z-index: 5;
+    width: 255px;
+}
+/********************/
+/*    END  SECTION3 */
+/*    FUDI APP      */
+/********************/
+
+/********************/
+/*                  */
+/*   START SECTION4 */
+/*       COMMENTS   */
+/********************/
+@media (max-width:600px){
+    .section4{
+        visibility: hidden;
+        height: 0;
+    }
+}
+.section4{
+    background: rgb(56, 49, 49) url(./assets/bg_comments.png) no-repeat center;
+    /* background-size: auto; */
+    background-position: center -280px;
+    color:white;
+    font-weight: 100;
+}
+.section4 .wrapper{
+    flex-direction: column;
+    padding: 40px;
+}
+.comment{
+    text-align: center;
+    font-size: 2rem;
+}
+div.comment-img-wrap{
+    height: 110px;
+    width: 110px;
+    border: 2px solid pink;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;   
+}
+div.comment-img-wrap img{
+    position: absolute;
+    left: -15px;
+}
+.sign{
+    font-style: italic;
+}
+/********************/
+/*    END  SECTION4 */
+/*    COMMENTS      */
+/********************/
+
+/********************/
+/*                  */
+/*   START SECTION5 */
+/*     CUISINES     */
+/********************/
+@media (max-width:600px){
+    div.section5{
+        margin:0;
+    }
+    .section5 .sec5-card{
+        flex-basis: 50%;
+    }
+    .section5 .wrapper, .section5 .wrapper *{
+        visibility: hidden;
+        height: 0;
+        font-size: 0;
+    }
+    .section5 h2.cuisin{
+        font-size: 1.5rem;
+    }
+}
+.section5{
+    margin-bottom: 40px;
+}
+.section5 h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+.sec5-card-wrap{
+    display:flex;
+    justify-content:space-between;
+        flex-wrap: wrap;
+}
+.sec5-card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis:20%;
+}
+.sec5-card img{
+    width: 100%;
+}
+.sec5-card .card-text{
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+h2.cuisin{
+    font-size: 1.8rem;
+    margin: 0;
+}
+p.n-recipes{
+    font-style: italic;
+}
+.stat{
+    text-align: center;
+}
+.section5 .wrapper{
+    justify-content: space-around;
+}
+.stat{
+    font-weight: 300;
+}
+.stat h2{
+    font-size: 2rem;
+}
+/********************/
+/*    END  SECTION5 */
+/*    CUISINES      */
+/********************/

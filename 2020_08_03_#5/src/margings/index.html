@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .header{
+            height: 400px;
+            background-color: blue;
+        }
+        .footer{
+            height: 400px;
+            /* background-color: green; */
+            margin: 0 -15px;
+        }
+        .nav{
+            background-color: yellow;
+            /* border: 1px solid transparent; */
+        }
+        .nav ul{
+           margin: 0;
+           padding: 15px 30px; 
+           list-style: none;
+        }
+
+        .box{
+            float: left;
+            box-sizing: border-box;
+            height: 100px;
+            background-color: white;
+            border: 1px solid red;
+            width: calc(100% / 4 - 30px);
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header"></div>
+        <div class="nav">
+            <ul>
+                <li>Item 1</li>
+                <li>Item 1</li>
+                <li>Item 1</li>
+            </ul>
+        </div>
+        <div class="footer">
+            <div class="box">
+                Item 1
+            </div>
+            <div class="box">
+                Item 1
+            </div>
+            <div class="box">
+                Item 1
+            </div>
+            <div class="box">
+                Item 1
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        html{
+            color:white;
+        }
+        .main{
+            height: 100vh;
+            background-color: darkgreen;
+            border: 5px solid yellow;
+        }
+        .wrap{
+            display: flex;
+            height: 100%;
+            width:1000px;
+            margin: 0 auto;
+            justify-content: space-around;
+            align-items:center;
+            border: 1px solid violet;
+        }
+        .wrap div{
+            border: 1px solid white;
+            margin:10px;
+            padding:50px;
+        }
+        .footer{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="wrap">
+            <div style="align-self: flex-start;">Item1</div>
+            <div style="flex-grow: 1;">Item2</div>
+            <div style="align-self: flex-end;">Item3</div>
+            <div>Item4</div>
+        </div>
+    </div> 
+    <div class="footer">
+        <div class="wrap">
+            <div class="card">Card1</div>
+            <div class="card">Card2</div>
+            <div class="card">Card3</div>
+            <div class="card">Card4</div>
+            <div class="card">Card5</div>
+        </div>
+    </div>   
+</body>
+</html>

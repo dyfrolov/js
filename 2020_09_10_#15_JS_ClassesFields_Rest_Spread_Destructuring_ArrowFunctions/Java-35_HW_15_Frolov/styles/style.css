@@ -1,0 +1,31 @@
+body{
+    background-color:gainsboro;
+    font-family: sans-serif;
+}
+.inputs{
+    position:fixed;
+    left:100px;
+    top:50px;
+    width:200px;
+}
+.inputs *{
+    display:block;
+    font-size: 1.2rem;
+}
+.contacts{
+    width:400px;
+    margin:0 20px 0 450px;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    border-bottom:1px solid white;
+}
+.contact>p::first-letter{
+    color:firebrick;
+}
+.contact>p::first-line{
+    font-weight: bold;
+}

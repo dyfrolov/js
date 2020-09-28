@@ -1,0 +1,14 @@
+p{
+    /* font-family: Roboto, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    font-style: italic; */
+    font: 900 40px Roboto, Arial, sans-serif;
+}
+
+p{
+    text-align: center;
+    /* line-height: 1.7; */
+    text-decoration: line-through;
+    color: rgba(13, 82, 13,0.2);
+}

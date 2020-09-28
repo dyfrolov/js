@@ -1,0 +1,56 @@
+
+let divWrapper = document.querySelector('#wrapper');
+let btnAdd = document.querySelector('#add');
+let input = document.querySelector('input[type=text]');
+input.focus();
+let elemId = 0;
+btnAdd.onclick = appendTask;
+input.onkeypress = keyPressed;
+function appendTask(){
+    if (input.value===""){
+        return;
+    }
+    let newItem = document.createElement('div');
+    newItem.classList.add('divitem');
+    divWrapper.append(newItem);
+    
+    let newChkItem = document.createElement('input');
+    newChkItem.setAttribute('type','checkbox');
+    newChkItem.setAttribute('id',`chkItem${elemId}`);
+    newChkItem.onchange = checkUncheck;
+    newItem.append(newChkItem);
+    
+    let newLabel = document.createElement('label');
+    newLabel.innerHTML = input.value;
+    input.value = '';
+    newLabel.setAttribute('for',`chkItem${elemId++}`);
+    newItem.append(newLabel);
+    
+    let newBtnRemove = document.createElement('button');
+    newBtnRemove.innerHTML = 'Remove';
+    newBtnRemove.classList.add('btnRemoveItem');
+    newItem.append(newBtnRemove);
+    newBtnRemove.onclick = removeItem;
+}
+
+function removeItem(event){
+    let currentDivItem = event.target.parentElement;
+    currentDivItem.remove();
+}
+
+function checkUncheck(){
+    let curChkBox = event.target;
+    let curLabel = curChkBox.parentElement.querySelector('label');
+    if (curChkBox.checked){
+        curLabel.classList.add('crossedout');
+    }else{
+        curLabel.classList.remove('crossedout');
+    }
+}
+function keyPressed(event){
+    if (event.keyCode===13){
+        appendTask();
+    }
+}
+
+

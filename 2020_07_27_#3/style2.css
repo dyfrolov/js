@@ -1,0 +1,26 @@
+p{
+    font-family: Roboto, Arial, sans-serif;
+    /* font-size: 40px; */
+    /* font-size: 40pt; */
+    /* font-size: 4cm; */
+    /* font-size: 20mm; */
+    font-size: 2em;
+    /* font-size: 20rm; */
+    /* font-weight: bold; */
+    font-weight: 600; /*100-900*/
+    font-style: italic;
+
+    font: italic 700 30px serif;  /*сокращённая запись*/
+
+}
+
+p{
+    text-align: center;/*justify, left, right*/
+    line-height: 1.7;
+    text-decoration: underline; /*line-through*/
+    /* color:gold; */
+    /* color:#521499; */
+    /* color:#52149910; with transparency */
+    /* color:rgb(226, 59, 221); */
+    color:rgba(226, 59, 221, 10);
+}

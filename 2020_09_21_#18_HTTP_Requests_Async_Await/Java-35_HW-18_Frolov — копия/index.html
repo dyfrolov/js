@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW-18 ContactBook</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./scripts/api.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="nav">
+        <h2>Phone Book</h2>
+        <ul>
+            <li><a href="#" id="navAdd">Add new contact</a></li>
+            <li><a href="#" id="navAuth">Auth</a></li>
+            <li><a href="#" id="navLogout">Logout</a></li>
+        </ul>
+    </div>
+    <hr>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ipsa mollitia nobis quae. Blanditiis eaque
+        esse laboriosam minus quia recusandae suscipit vel veniam voluptatem voluptatibus? Beatae id laborum minus
+        sunt.
+    </p>
+    <div class="contacts">
+        <ul class="list">
+        </ul>
+        <div class="contact-view"  id="divContactView">
+        </div>
+        <div class="contact-view add-contact" id="divContactAdd">
+            <div class="alert alert-success">
+                Contact was added!
+            </div>
+            <div class="alert alert-danger">
+                All fields should be fill!
+            </div>
+            <form action="./contact_view.html" id="formAddContact">
+                <!-- <input class="form-control invalid" type="text" name="name" placeholder="Type name"> -->
+                <input class="form-control" type="text" name="name" placeholder="Type name">
+                <input class="form-control" type="text" name="lastname" placeholder="Type lastname">
+                <input class="form-control" type="text" name="phone" placeholder="Type phone">
+                <input class="form-control" type="text" name="email" placeholder="Type email">
+                <input class="form-control" type="text" name="address" placeholder="Type address">
+                <textarea class="form-control" type="text" name="description" placeholder="Type description"></textarea>
+                <div class="buttons"><button class="btn btn-success" id="btnAddContact">Add</button></div>
+            </form>
+        </div>
+        <div class="contact-view add-contact"  id="divContactEdit">
+            <div class="alert alert-success">
+                Contact was update!
+            </div>
+            <div class="alert alert-danger">
+                All fields should be fill!
+            </div>
+            <form action="./contact_view.html" id="formEditContact">
+                <input class="form-control" type="text" name="name" placeholder="Type name" >
+                <input class="form-control" type="text" name="lastname" placeholder="Type name" >
+                <input class="form-control" type="text" name="phone" placeholder="Type phone" >
+                <input class="form-control" type="text" name="email" placeholder="Type email" >
+                <input class="form-control" type="text" name="address" placeholder="Type address" >
+                <textarea class="form-control" name="description" placeholder="Type description"></textarea>
+                <div class="buttons"><button class="btn btn-success" id="btnEditContact">Save</button></div>
+            </form>
+        </div>
+    </div>
+    <div class="auth">
+        <h2>Authentication</h2>
+        <div class="alert alert-success">Login or registration success</div>
+        <div class="alert alert-danger">Login or registration failure</div>
+        <form action="./contact_view.html" id="formAuth">
+            <input type="email" name="email" class="form-control" placeholder="Type email" required>
+            <input type="password" name="password" class="form-control" placeholder="Type password" required>
+            <div class="auth-controls">
+                <button class="btn btn-success" id="btnLogin">login</button>
+                <button class="btn btn-primary" id="btnReg">registration</button>
+            </div>
+        </form>
+    </div>
+    <div class="progress">
+        <div class="loader"></div>
+    </div>
+</div>
+</body>
+</html>

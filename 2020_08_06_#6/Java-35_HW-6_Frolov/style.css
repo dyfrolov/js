@@ -1,0 +1,219 @@
+html, body, div,p h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Lato', sans-serif;
+}
+.section1{
+    color: white;
+    /* background: rgb(66, 47, 39) url("./assets/bg_main.png") no-repeat; */
+    background:linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(255,255,255,0) 10%),
+        rgb(66, 47, 39) url("./assets/bg_main.png") no-repeat;
+    background-size: cover, cover;
+    height: 100vh;
+}
+.wrapper{
+    height: 100%;
+    display:flex;
+    width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+}
+.section1 .wrapper{
+    flex-direction: column;
+}
+.nav{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+.nav-item{
+    margin:0 15px;
+}
+.nav #div-logo{
+    margin-right: auto;
+}
+.nav img#logo{
+    width: 150px;
+}
+.nav a{
+    color:inherit;
+    text-decoration: none;
+}
+.slogan-wrap{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.slogan-wrap *{
+    margin: 0;
+}
+.slogan-wrap h1{
+    font-size: 5rem;
+    margin-bottom: 10px;
+}
+p.slogan1{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    opacity: 0.8;
+}
+.slogan-wrap button{
+    background-color: transparent;
+    padding:20px 60px;
+    color: inherit;
+    text-transform: uppercase;
+    border:2px solid white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+p.slogan2{
+    text-transform: uppercase;
+}
+.slogan3{
+    color:inherit;
+}
+.u-line{
+    padding-bottom: 3px;
+    border-bottom: 1px solid  #c42043;
+}
+.section2 .card{
+    margin:40px 20px;
+    text-align: center;
+}
+.card img{
+    padding:10px; 
+    border: 1px solid black;
+    border-radius: 100%; 
+}
+.oval img{
+    padding:25px 10px;
+}
+.card h3{
+    text-transform: uppercase;
+}
+.section3{
+    background-color: rgb(240, 240, 240);
+    height: 510px;
+}
+.section3 .wrapper{
+    position: relative;
+    overflow-Y: hidden; 
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding:50px 0; 
+}
+.intro-wrap{
+    flex-basis: 400px;
+}
+.intro-wrap h3{
+    text-transform: uppercase;
+}
+.intro-wrap p{
+    font-weight: 300;
+}
+.intro-wrap button{
+    padding: 0;
+    border: none;
+    height: 40px;
+}
+img#iphone{
+    position: absolute;
+    top:70px;
+    left:42px;
+    z-index: 1;
+    width: 320px;
+}
+img#bg-phone{
+    position: absolute;
+    top:163px;
+    left:84px;
+    z-index: 5;
+    width: 255px;
+}
+.section4{
+    background: rgb(56, 49, 49) url(./assets/bg_comments.png) no-repeat center;
+    background-size: auto;
+    color:white;
+    font-weight: 100;
+}
+.section4 .wrapper{
+    flex-direction: column;
+    padding: 40px;
+}
+.comment{
+    text-align: center;
+    font-size: 2rem;
+}
+div.comment-img-wrap{
+    height: 110px;
+    width: 110px;
+    border: 2px solid pink;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;   
+}
+div.comment-img-wrap img{
+    position: absolute;
+    margin-left: -15px;
+}
+.sign{
+    font-style: italic;
+}
+.section5{
+    margin-bottom: 40px;
+}
+.section5 h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+.sec5-card-wrap{
+    display:flex;
+    justify-content:space-between;
+        flex-wrap: wrap;
+}
+.sec5-card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-basis:calc(100% / 5) */
+    flex-basis:20%;
+}
+.sec5-card img{
+    width: 100%;
+}
+.sec5-card .card-text{
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+h2.cuisin{
+    font-size: 2.2rem;
+    margin: 0;
+}
+p.n-recipes{
+    font-style: italic;
+}
+.stat{
+    text-align: center;
+}
+.section5 .wrapper{
+    justify-content: space-around;
+}
+.stat{
+    font-weight: 300;
+}
+.stat h2{
+    font-size: 2rem;
+}

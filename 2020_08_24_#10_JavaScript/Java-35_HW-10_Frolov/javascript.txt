@@ -1,0 +1,95 @@
+console.log("============= palindrome ================");
+
+function palindrome(str){
+    if ( str==null) {
+        return false;
+    }
+    if( typeof str !="string" ){
+        str = str.toString();
+    }
+    for(let i = 0; i < str.length / 2 ; i++ ){
+        if ( str.charAt(i) !== str.charAt(str.length-1-i) ){
+            return false;
+        }
+    }
+    return true;
+}
+
+
+let str = "abcba";
+console.log( str," is a palindrome : ", palindrome( str ) );
+str = "ababc";
+console.log( str," is a palindrome : ", palindrome( str ) );
+str = 3430;
+console.log( str," is a palindrome : ", palindrome( str ) );
+str = 3430343;
+console.log( str," is a palindrome : ", palindrome( str ) );
+str = [111,11011,111];
+console.log( str," is a palindrome : ", palindrome( str ) );
+str = [111,11012,111];
+console.log( str," is a palindrome : ", palindrome( str ) );
+str = null;
+console.log( str," is a palindrome : ", palindrome( str ) );
+
+
+
+console.log("============= bubble sorting ================");
+
+function bubbleSort(arr){
+    let swapBuffer;
+    let isArrChanged;
+    let sortedAreaStart = arr.length;
+    do{
+        isArrChanged = false;
+        for( let i = 1; i < sortedAreaStart; i++ )
+        {
+            if( arr[i] < arr[i-1] ){
+                isArrChanged = true;
+                swapBuffer = arr[i];
+                arr[i] = arr[i-1];
+                arr[i-1] = swapBuffer;
+            }
+        }
+        sortedAreaStart--;
+    }while(isArrChanged)
+}
+
+
+let arr = [2,1,3,-1,37,4,6,7,99,4];
+console.log("Before bubble sort: ",arr);
+bubbleSort(arr);
+console.log("After bubble sort : ",arr);
+
+
+
+console.log("============= binary searching ================")
+
+function binarySearch(arr,value){
+    let searchRangeMin = 0;
+    let searchRangeMax = arr.length-1;
+    let searchRangeMiddle ;
+    while( searchRangeMin <= searchRangeMax){
+        searchRangeMiddle = Math.floor((searchRangeMin + searchRangeMax) / 2 )
+        if( arr[searchRangeMiddle] === value ) {
+            return searchRangeMiddle;
+        }else if( arr[searchRangeMiddle] < value ) {
+            searchRangeMin = searchRangeMiddle + 1;
+        }else {
+            searchRangeMax = searchRangeMiddle - 1;
+        }
+    }
+    return -1;
+}
+
+
+let funcPosition = function( valueToFind, position){ 
+    return "Value " + valueToFind.toString() + (position===-1?" is not found.":" found in position "+position.toString() ) 
+};
+
+let valueToFind = 37;
+console.log( funcPosition( valueToFind, binarySearch(arr, valueToFind) ) );
+
+valueToFind = 77;
+console.log( funcPosition( valueToFind, binarySearch(arr, valueToFind) ) );
+
+console.log("============= The End ================")

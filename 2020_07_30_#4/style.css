@@ -1,0 +1,17 @@
+.body{
+
+}
+
+.box{
+    border:1px Solid red;
+    width:50%;
+}
+.div{
+    font-size: 0.8rem;
+}
+.my-port{
+    width: 10vw;
+    height: 100vh;
+    border:1px Solid black;
+    background-color: green;
+}

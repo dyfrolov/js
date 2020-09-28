@@ -1,0 +1,84 @@
+<label>                    
+<p><b>Nokia6310i</b></p>                      
+<a href="./NokiaPage.html"><input type="image" src="./assets/nokia.png" alt="nokia" width="90" height="180"></a>      
+</label>
+
+
+colspawn - сколько столбцов объединить
+rowspawn - сколько столбцов объединить
+	
+
+img раздвигают контейнер, независимо от размера контейнера, 
+поэтому картинке добавл width 100%
+
+Способы подкл CSS (убывание приоритета): 
+1. inline атрибут style="color:red;font-style:"
+2. внутри тега <style> (обычно внутри <head></head>)
+3. внешний <link rel="stylesheet" href="">
+
+
+Селектор - шаблон, указывающий множество, для которых применяются свойства.
+selector{
+	property:value;
+	...
+}
+
+группировка селекторов:
+selector1, selector2 {
+	property:value;
+	...
+}
+
+
+Селекторы:
+* - универсальный селектор, применяется ко всем элем на странице
+tag - указываются тэги.
+.class - может для разых типов тэгов
+#id - уникальный (для различных контекстных селекторов или селекторы потомков)
+селекторы псевдоклассов, ....
+селекторы атрибутов
+
+
+2 основных принципа CSS:
+ - наследование (какие-то элементы наследуют стили родителей, для тех, которые не наследуют по умолчанию, указывают property:inherit;)
+ - каскадирование  - объединение свойств элемента, определенных в разных селекторах. При коллизиях(конфликтах) - приоритеты:
+	1. стиль родителя
+	2. стиль подключаемого файла стилей
+	3. стиль в <style> 
+	4. inline
+	5. color:blue !important;
+   веса:
+	тэг 1
+	.class 10
+	#id 100
+	inline styles 1000
+	веса складываются
+	если равные веса, то что прописано ниже - приоритетнее. 
+
+w3school.html
+
+
+margin
+padding
+border
+width - for img
+background
+
+
+
+====================================================
+Last HomeTask Solution:
+https://drive.google.com/drive/folders/19KAmO-joQRyGjDFzwtWloQlzGUNqRiB1?usp=sharing
+
+Classwork:
+https://drive.google.com/drive/folders/1i5mOGqCeg3lSfn1fKiFzwlrzNJWyLOPr?usp=sharing
+
+HomeTask inside classwork folder
+
+CSS Reference: https://www.w3schools.com/cssref/default.asp
+
+Video:
+https://youtu.be/pRwPZ-uSqTc
+
+
+

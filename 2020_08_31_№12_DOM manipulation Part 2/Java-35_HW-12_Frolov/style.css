@@ -1,0 +1,66 @@
+*{
+    font-size:1.1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+div{
+    box-sizing: border-box;
+}
+#wrapper{
+    width:60vw;
+    min-width:500px;
+    margin:0 auto;
+    padding:100px 0;
+}
+#inputwrapper{
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom:2px solid rgb(62, 89, 243);
+}
+input[type="text"]{
+    flex-grow: 1;
+    border: 1px solid blue;
+    font-weight:normal;
+    color:rgb(62, 89, 243);
+}
+.divitem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:2px solid rgb(62, 89, 243);
+    margin:25px 0;
+    padding:5px;
+    border-radius: 5px;
+}
+label{
+    flex-grow: 1;
+    display:inline-block;
+    text-decoration: none;
+    word-wrap: break-word;
+    max-width: 45vw; 
+    color: rgb(62, 89, 243);
+}
+button{
+    background-color: rgb(62, 89, 243);
+    color:white;
+    width: 150px;
+    border-radius: 5px;        
+    display:inline-block;
+    text-transform: uppercase;
+    padding:5px;
+    margin-left: 5px;
+}
+.crossedout{
+    text-decoration: line-through;
+}
+input{
+    display:inline-block;
+}
+input[type="checkbox"]{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+button:hover{
+    cursor: pointer;
+}
