@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ContactBook</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="nav">
+        <h2>Phone Book</h2>
+        <ul>
+            <li><a href="#">Add new contact</a></li>
+            <li><a href="#">Auth</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="contacts">
+        <ul class="list">
+            <li class="list-item item-active">
+                <h2 class="title">John Doe</h2>
+                <h3 class="sub-title">0555555555</h3>
+            </li>
+            <li class="list-item">
+                <h2 class="title">Jack Sparrow</h2>
+                <h3 class="sub-title">057777777</h3>
+            </li>
+            <li class="list-item">
+                <h2 class="title">Tony Stark</h2>
+                <h3 class="sub-title">0123456789</h3>
+            </li>
+        </ul>
+        <div class="contact-view add-contact">
+            <div class="alert alert-success">
+                Contact was update!
+            </div>
+            <div class="alert alert-danger">
+                All fields should be fill!
+            </div>
+            <form action="#">
+                <input class="form-control" type="text" name="name" placeholder="Type name" value="John">
+                <input class="form-control" type="text" name="lastname" placeholder="Type name" value="Doe">
+                <input class="form-control" type="text" name="phone" placeholder="Type phone" value="0555555555">
+                <input class="form-control" type="text" name="email" placeholder="Type email" value="john@mail.com">
+                <input class="form-control" type="text" name="address" placeholder="Type address" value="New York">
+                <textarea class="form-control" name="description" placeholder="Type description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quia.</textarea>
+                <div class="buttons"><button class="btn btn-success">Save</button></div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

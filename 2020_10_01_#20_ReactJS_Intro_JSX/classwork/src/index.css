@@ -1,0 +1,14 @@
+/* #root{
+    width: 1000px;
+    height: 200px;
+    background-color: red;
+} */
+
+.center{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.color-red{
+    color: red;
+}
